@@ -1,0 +1,253 @@
+/* Main Layout */
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #828282;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Header */
+
+.navigation {
+  background-color: #f7f7f7;
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+}
+
+.navigation button {
+  border: none;
+  background-color: #f7f7f7;
+  text-align: center;
+  width: 150px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navigation button.selected {
+  background-color: #ffffff;
+  font-weight: 800;
+}
+
+/* Body */
+
+/* Search Bar */
+.search {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  width: 500px;
+  border-radius: 10px;
+  padding: 8px 16px;
+  margin: 8px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #828282;
+  font-weight: 300;
+}
+
+.search::placeholder {
+  color: #e0e0e0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px auto;
+}
+
+.search-button {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  width: 100px;
+  border-radius: 20px;
+  padding: 8px 8px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  color: #828282;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Cards */
+
+.info-card {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  width: 400px;
+  border-radius: 10px;
+  padding: 8px 8px;
+  margin: 24px auto 8px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #828282;
+  font-weight: 300;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px auto;
+}
+
+.card-tag {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 15px;
+  /* margin: 0 auto 10px auto; */
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  color: #828282;
+}
+
+.vote-buttons {
+  justify-content: right;
+  display: flex;
+  gap: 8px;
+}
+
+.vote-buttons button {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  font-size: 10px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Full List */
+.full-list {
+  margin: 24px auto 8px auto;
+  width: 500px;
+  display: grid;
+  padding: 8px 32px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.list-category {
+  margin-top: 16px;
+  align-items: left;
+  font-size: 16px;
+}
+
+.list-item {
+  margin-top: 24px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.list-acronym {
+  font-weight: 800px;
+}
+
+/* Manage */
+
+.input-form {
+  margin: 24px auto 24px auto;
+  width: 500px;
+  padding: 8px 32px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-name {
+  flex: 1;
+  text-align: right;
+  padding-right: 16px;
+  font-size: 14px;
+  color: #828282;
+  font-weight: 300;
+}
+
+.input-field {
+  flex: 3;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 8px 16px;
+  margin: 8px auto 8px auto;
+  text-align: left;
+  font-size: 14px;
+  color: #828282;
+  font-weight: 300;
+}
+
+.input-field::placeholder {
+  color: #e0e0e0;
+}
+
+.submit-button {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  width: 100px;
+  border-radius: 20px;
+  padding: 8px 8px;
+  margin: 16px auto 16px auto;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #828282;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Footer */
+.footnote {
+  width: 600px;
+  margin: 24px auto 8px auto;
+  margin-top: 16px;
+  font-size: 10px;
+  color: #828282;
+}
