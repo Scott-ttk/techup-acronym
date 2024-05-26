@@ -1,28 +1,29 @@
 /* Main Layout */
 * {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #828282;
+  font-family: "Poppins", sans-serif;
+  color: #434343;
   font-size: 18px;
 }
 
 h1 {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 600;
+  color: #141414;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
 }
 
 p {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .section-title {
@@ -35,52 +36,69 @@ p {
   display: none !important;
 }
 
+.container {
+  background-color: #fafafa;
+}
+
 /* Header */
 
+.logo {
+  color: #fa541c;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  padding: 40px 0px 20px 0px;
+  font-weight: 600;
+}
+
 .navigation {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   justify-content: center;
   display: flex;
   gap: 8px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .navigation button {
   border: none;
-  background-color: #f7f7f7;
+  background-color: #fff2e8;
   text-align: center;
   width: 150px;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 8px 16px;
   margin: 8px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  color: #fa541c;
 }
 
 .navigation button.selected {
-  background-color: #ffffff;
-  font-weight: 800;
+  border: none;
+  background-color: #fa541c;
+  color: #ffffff;
 }
 
 /* Body */
 
 /* Search Bar */
 .search {
-  border: 1px solid #e0e0e0;
-  background-color: #ffffff;
-  width: 500px;
-  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  max-width: 600px;
+  width: 80%;
+  border-radius: 20px;
   padding: 8px 16px;
-  margin: 8px auto;
+  margin: 20px auto;
   display: block;
   text-align: center;
   font-size: 18px;
-  color: #828282;
+  color: #8c8c8c;
   font-weight: 300;
 }
 
 .search::placeholder {
-  color: #e0e0e0;
+  color: #bfbfbf;
 }
 
 .button-container {
@@ -108,11 +126,12 @@ p {
 /* Cards */
 
 .info-card {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #f0f0f0;
   background-color: #ffffff;
-  width: 400px;
+  max-width: 600px;
+  width: 80%;
   border-radius: 10px;
-  padding: 8px 8px;
+  padding: 16px 16px;
   margin: 24px auto 8px auto;
   display: block;
   text-align: center;
@@ -126,20 +145,20 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 16px auto;
+  margin: 24px auto 12px auto;
 }
 
 .card-tag {
-  border: 1px solid #e0e0e0;
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 10px 15px;
+  border: none;
+  background-color: #e6f4ff;
+  border-radius: 8px;
+  padding: 8px 12px;
   /* margin: 0 auto 10px auto; */
   display: inline-block;
   justify-content: center;
   text-align: center;
   font-size: 12px;
-  color: #828282;
+  color: #1677ff;
 }
 
 .vote-buttons {
@@ -161,7 +180,8 @@ p {
 /* Full List */
 .full-list {
   margin: 24px auto 8px auto;
-  width: 500px;
+  max-width: 500px;
+  width: 80%;
   display: grid;
   padding: 8px 32px;
   border-radius: 10px;
@@ -189,11 +209,13 @@ p {
 /* Manage */
 
 .input-form {
+  background-color: #ffffff;
   margin: 24px auto 24px auto;
-  width: 500px;
+  max-width: 600px;
+  width: 80%;
   padding: 8px 32px;
   border-radius: 10px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #f0f0f0;
 }
 
 .form-row {
@@ -225,27 +247,32 @@ p {
 }
 
 .input-field::placeholder {
-  color: #e0e0e0;
+  color: #bfbfbf;
 }
 
 .submit-button {
-  border: 1px solid #e0e0e0;
-  background-color: #ffffff;
+  border: none;
+  background-color: #fa541c;
   width: 100px;
   border-radius: 20px;
   padding: 8px 8px;
   margin: 16px auto 16px auto;
   display: block;
   text-align: center;
-  font-size: 12px;
-  color: #828282;
+  font-size: 16px;
+  color: #ffffff;
   cursor: pointer;
-  transition: 0.3s;
+}
+
+.submit-button:disabled {
+  background-color: #bfbfbf;
+  cursor: default;
 }
 
 /* Footer */
 .footnote {
-  width: 600px;
+  max-width: 500px;
+  width: 80%;
   margin: 24px auto 8px auto;
   margin-top: 16px;
   font-size: 10px;
