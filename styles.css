@@ -53,17 +53,15 @@ p {
 
 @media (max-width: 900px) {
   .logo {
-    font-size: 32px;
+    font-size: 50px;
   }
 }
 
 .navigation {
-  background-color: #ffffff;
-  justify-content: center;
   display: flex;
-  gap: 8px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px auto;
 }
 
 .navigation button {
